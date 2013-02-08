@@ -37,4 +37,6 @@
   "Sets and reloads the color theme after every time interval defined by daylight-interval"
   (run-at-time "0 sec" daylight-interval 'daylight-choose-theme))
 
+(daylight-run)
+
 (provide 'daylight)
