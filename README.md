@@ -3,7 +3,7 @@ emacs-daylight
 
 Chooses your Emacs 24 color theme based on the time of day.
 
-If you're like me, you change your colorscheme a lot throughout the day out of
+If you're like me, you change your color scheme a lot throughout the day out of
 either eye-strain or color-induced boredom. Let this script take care of this
 process for you!
 
@@ -35,10 +35,10 @@ afternoon, evening, and late night phases each begin. For example:
 
 By default, the times are defined as follows:
 
-* daylight-morning-hour -> 6
+* daylight-morning-hour   -> 6
 * daylight-afternoon-hour -> 12
-* daylight-evening-hour -> 18
-* daylight-late-hour -> 20
+* daylight-evening-hour   -> 18
+* daylight-late-hour      -> 20
 
 You may also change the time interval at which the script-reapplies your themes:
 
