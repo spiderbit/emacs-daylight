@@ -6,9 +6,9 @@
 
 
 (defvar daylight-morning-theme 'adwaita "Theme chosen by daylight in the morning")
-(defvar daylight-afternoon-theme 'zen-and-art "Theme chosen by daylight in the afternoon")
-(defvar daylight-evening-theme 'twilight "Theme chosen by daylight in the evening")
-(defvar daylight-late-theme 'solarized-dark "Theme chosen by daylight in the late-night")
+(defvar daylight-afternoon-theme 'manoj-dark "Theme chosen by daylight in the afternoon")
+(defvar daylight-evening-theme 'tsdh-dark "Theme chosen by daylight in the evening")
+(defvar daylight-late-theme 'zen-and-art"Theme chosen by daylight in the late-night")
 (defvar daylight-morning-hour 6 "Hour at which daylight begins applying the morning theme")
 (defvar daylight-afternoon-hour 12 "Hour at which daylight begins applying the afternoon theme")
 (defvar daylight-evening-hour 18 "Hour at which daylight begins applying the evening theme")
