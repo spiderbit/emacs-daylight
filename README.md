@@ -4,7 +4,7 @@ emacs-daylight
 Chooses your Emacs 24 color theme based on the time of day.
 
 If you're like me, you change your color scheme a lot throughout the day out of
-either eye-strain or color-induced boredom. Let this script take care of this
+either eye-strain or color-induced boredom. Let this script take care of the
 process for you!
 
 Features four time windows for Emacs to re-apply your favorite themes. The start
@@ -18,6 +18,7 @@ Installation
         $ cd ~/.emacs.d/ && git clone https://github.com/daf-/emacs-daylight.git
 
 * Then add the following to your ```~/.emacs``` or ```init.el``` file:
+
         (add-to-list 'load-path "~/.emacs.d/emacs-daylight")
         (require 'daylight)
 
