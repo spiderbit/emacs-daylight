@@ -26,8 +26,9 @@
         ((and (>= (daylight-current-hour) daylight-afternoon-hour) (< (daylight-current-hour) daylight-evening-hour))
          daylight-afternoon-theme)
         ((and (>= (daylight-current-hour) daylight-evening-hour) (< (daylight-current-hour) daylight-late-hour))
-         daylight-evening-hour)
-        (else daylight-late-hour)))
+         daylight-evening-theme)
+        (else
+         daylight-late-theme)))
 
 (defun daylight-choose-theme ()
   "Chooses a theme based on the current time"
@@ -37,6 +38,6 @@
   "Sets and reloads the color theme after every time interval defined by daylight-interval"
   (run-at-time "0 sec" daylight-interval 'daylight-choose-theme))
 
-(daylight-run)
+;; (daylight-run)
 
 (provide 'daylight)
