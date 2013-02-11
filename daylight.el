@@ -27,7 +27,7 @@
          daylight-afternoon-theme)
         ((and (>= (daylight-current-hour) daylight-evening-hour) (< (daylight-current-hour) daylight-late-hour))
          daylight-evening-theme)
-        (else
+        (t
          daylight-late-theme)))
 
 (defun daylight-choose-theme ()
