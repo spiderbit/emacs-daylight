@@ -26,24 +26,23 @@ $ cd ~/.emacs.d/ && git clone https://github.com/daf-/emacs-daylight.git
 
 ### Settings
 
-You can customize daylight with `M-x customize-group RET daylight`
-
-Set your custom themes as follows:
+You can customize daylight with `M-x customize-group RET
+daylight`. Alternatively, set your custom themes as follows:
 
 ```lisp
-(setq daylight-morning-theme 'my-morning-theme-name
-      daylight-afternoon-theme 'my-afternoon-theme-name
-      daylight-evening-theme 'my-evening-theme-name
-      daylight-late-theme 'my-late-theme-name)
+(setq daylight-morning-theme 'my-morning-theme
+      daylight-afternoon-theme 'my-afternoon-theme
+      daylight-evening-theme 'my-evening-theme
+      daylight-late-theme 'my-late-theme)
 ```
 
-To activate: `(daylight-mode)`
+To activate: `M-x daylight-mode` `(daylight-mode)`.
 
 You may also specify the starting times - the hours at which the morning,
 afternoon, evening, and late night phases each begin. For example:
 
 ```lisp
-(setq daylight-morning-hour 4) ;; I sincerely hope you don't wake up this early
+(setq daylight-morning-hour 4) ;; Please don't wake up this early
 ```
 
 By default, the times are defined as follows:
