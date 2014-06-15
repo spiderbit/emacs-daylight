@@ -94,7 +94,7 @@
          daylight-morning-theme)
         ((and (>= hour daylight-afternoon-hour) (< hour daylight-evening-hour))
          daylight-afternoon-theme)
-        ((and (>= hour daylight-evening-hour) (< hour daylight-late-hour))
+	((and (>= hour daylight-evening-hour) (or (< hour daylight-late-hour) (> daylight-evening-hour daylight-late-hour)))
          daylight-evening-theme)
         (t
          daylight-late-theme)))
