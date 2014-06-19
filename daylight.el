@@ -94,7 +94,8 @@
          daylight-morning-theme)
         ((and (>= hour daylight-afternoon-hour) (< hour daylight-evening-hour))
          daylight-afternoon-theme)
-	((and (or (>= hour daylight-evening-hour) (< hour daylight-morning-hour))(or (< hour daylight-late-hour) (>= daylight-evening-hour daylight-late-hour)))
+	((and (or (>= hour daylight-evening-hour) (< hour daylight-morning-hour))
+	      (or (< hour daylight-late-hour) (> hour daylight-morning-hour)))
          daylight-evening-theme)
         (t
          daylight-late-theme)))
@@ -141,3 +142,6 @@ Otherwise behave as if called interactively."
 (provide 'daylight)
 
 ;;; daylight.el ends here
+
+
+;;some test stuff
